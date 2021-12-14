@@ -9,7 +9,7 @@ console.log(`Node.js v${process.versions.node}!`);
 
 //---send index file on empty directory---
 express.get('/', (req, res) => {
-  res.send(fs.readFileSync('/pages/index.html'));
+  res.send(fs.readFile('public/pages/index.html'));
 });
 
 //---send static folder on /static directory---
