@@ -9,7 +9,7 @@ const port = 3000;
 
 //---send index file on empty directory---
 express.get('/', (req, res) => {
-  res.send('AAAA');
+  res.send(fs.readFileSync('public/pages/index.html', { encoding: 'utf8' }));
 });
 
 //---send static folder on /static directory---
