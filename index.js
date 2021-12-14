@@ -5,11 +5,11 @@ const express = exp();
 
 const port = 3000;
 
-console.log(`Node.js v${process.versions.node}!`);
+//console.log(`Node.js v${process.versions.node}!`);
 
 //---send index file on empty directory---
 express.get('/', (req, res) => {
-  res.send(fs.readFile('public/pages/index.html'));
+  res.send('AAAA');
 });
 
 //---send static folder on /static directory---
