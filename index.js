@@ -13,7 +13,7 @@ express.get('/', (req, res) => {
 });
 
 //---send static folder on /static directory---
-express.use('/static', express.static('public/static'));
+express.use('/static', exp.static('public/static'));
 
 express.listen(port, () => {
   console.log('Express now listening on port ' + port);
